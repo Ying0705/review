@@ -13,3 +13,16 @@ sum_len = 0
 for d in data:
 	sum_len = sum_len + len(d)
 print ('the avarge of comment',sum_len/len(data))
+
+new = []
+for d in data :
+	if len (d) < 100 :
+		 new.append(d)
+print('all of this have',len(new),'comments lens smaller than 100')
+print(new[0])
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('all of this have',len(good),'comments lens smaller than 100')
